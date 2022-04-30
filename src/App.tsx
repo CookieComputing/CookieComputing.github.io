@@ -6,7 +6,7 @@ import { CssBaseline } from '@mui/material';
 function App() {
   return (
     <Fragment>
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
       <h1>Hello, world! </h1>
     </Fragment>
   );
