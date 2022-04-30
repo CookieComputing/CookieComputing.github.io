@@ -1,13 +1,20 @@
 import React, { Fragment } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { CssBaseline } from '@mui/material';
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+const defaultTheme = createTheme({
+  palette: {
+    mode: "dark",
+  }
+});
 
 function App() {
   return (
     <Fragment>
       <CssBaseline enableColorScheme />
-      <h1>Hello, world! </h1>
+      <ThemeProvider theme={defaultTheme}>
+       <h1>Hello, world! </h1>
+      </ThemeProvider>
     </Fragment>
   );
 }
